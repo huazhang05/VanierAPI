@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "23ba42b6-2bed-44e0-82e1-ae894bcb0966",
+		"name": "VainerAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24706448"
+	},
+	"item": [
+		{
+			"name": "Add student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stu_Id\": 6,\r\n    \"stu_email\": \"Sarah@vanier.ca\",\r\n    \"stu_fName\": \"Sarah\",\r\n    \"stu_lName\": \"Sarah\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/student/AddStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"AddStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/DeleteStudentById/54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"DeleteStudentById",
+						"54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/AllStudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"AllStudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search student by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/student/SearchStudentById/54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"SearchStudentById",
+						"54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update student by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"stu_Id\": 2,\r\n        \"stu_fName\": \"Allen_up\",\r\n        \"stu_lName\": \"Allonxx\",\r\n        \"stu_email\": \"allen002@vanier.ca\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/student/UpdateStudent/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"UpdateStudent",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"t_Id\": 4,\r\n    \"t_email\": \"Lisa@vanier.ca\",\r\n    \"t_fName\": \"Lisa\",\r\n    \"t_lName\": \"Lisa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/teacher/AddTeacher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"AddTeacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Teaher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teacher/DeleteTeacherById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"DeleteTeacherById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all teachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teacher/AllTeachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"AllTeachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search teacher by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teacher/SearchTeacherById/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"SearchTeacherById",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update teacher by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"t_Id\": 3,\r\n        \"t_fName\": \"Mary\",\r\n        \"t_lName\": \"MMM\",\r\n        \"t_email\": \"mary002@vanier.ca\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/teacher/UpdateTeacher/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"UpdateTeacher",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"c_Id\": 4,\r\n    \"c_Name\": \"Java\",\r\n    \"teacher\":{\r\n        \"t_Id\": 53,\r\n        \"t_fName\": \"Mark\",\r\n        \"t_lName\": \"Mark\",\r\n        \"t_email\": \"Mark@vanier.ca\"\r\n    },\r\n    \"student\": [       \r\n    \r\n    {\r\n        \"stu_Id\": 102,\r\n        \"stu_fName\": \"Xing\",\r\n        \"stu_lName\": \"yyyy\",\r\n        \"stu_email\": \"xing@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 104,\r\n        \"stu_fName\": \"Nancy\",\r\n        \"stu_lName\": \"Nancy\",\r\n        \"stu_email\": \"Nancy@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 105,\r\n        \"stu_fName\": \"Emily\",\r\n        \"stu_lName\": \"Emily\",\r\n        \"stu_email\": \"Emily@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 106,\r\n        \"stu_fName\": \"Joshua\",\r\n        \"stu_lName\": \"Joshua\",\r\n        \"stu_email\": \"Joshua@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 107,\r\n        \"stu_fName\": \"Melissa\",\r\n        \"stu_lName\": \"Melissa\",\r\n        \"stu_email\": \"Melissa@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 108,\r\n        \"stu_fName\": \"Ryan\",\r\n        \"stu_lName\": \"Ryan\",\r\n        \"stu_email\": \"Ryan@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 109,\r\n        \"stu_fName\": \"Shirley\",\r\n        \"stu_lName\": \"Shirley\",\r\n        \"stu_email\": \"Shirley@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 110,\r\n        \"stu_fName\": \"Emma\",\r\n        \"stu_lName\": \"Emma\",\r\n        \"stu_email\": \"Emma@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 111,\r\n        \"stu_fName\": \"Nicole\",\r\n        \"stu_lName\": \"Nicole\",\r\n        \"stu_email\": \"Nicole@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 112,\r\n        \"stu_fName\": \"Gregory\",\r\n        \"stu_lName\": \"Gregory\",\r\n        \"stu_email\": \"Gregory@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 113,\r\n        \"stu_fName\": \"Jack\",\r\n        \"stu_lName\": \"Jack\",\r\n        \"stu_email\": \"Jack@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 114,\r\n        \"stu_fName\": \"Tyler\",\r\n        \"stu_lName\": \"Tyler\",\r\n        \"stu_email\": \"Tyler@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 115,\r\n        \"stu_fName\": \"Ruth\",\r\n        \"stu_lName\": \"Ruth\",\r\n        \"stu_email\": \"Ruth@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 116,\r\n        \"stu_fName\": \"Olivia\",\r\n        \"stu_lName\": \"Olivia\",\r\n        \"stu_email\": \"Olivia@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 117,\r\n        \"stu_fName\": \"Peter\",\r\n        \"stu_lName\": \"Peter\",\r\n        \"stu_email\": \"Peter@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 118,\r\n        \"stu_fName\": \"Joan\",\r\n        \"stu_lName\": \"Joan\",\r\n        \"stu_email\": \"Joan@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 119,\r\n        \"stu_fName\": \"Judith\",\r\n        \"stu_lName\": \"Judith\",\r\n        \"stu_email\": \"Judith@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 120,\r\n        \"stu_fName\": \"Roger\",\r\n        \"stu_lName\": \"Roger\",\r\n        \"stu_email\": \"Roger@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 121,\r\n        \"stu_fName\": \"Teresa\",\r\n        \"stu_lName\": \"Teresa\",\r\n        \"stu_email\": \"Teresa@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 122,\r\n        \"stu_fName\": \"Jean\",\r\n        \"stu_lName\": \"Jean\",\r\n        \"stu_email\": \"Jean@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 123,\r\n        \"stu_fName\": \"Logan\",\r\n        \"stu_lName\": \"Logan\",\r\n        \"stu_email\": \"Logan@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 124,\r\n        \"stu_fName\": \"Diana\",\r\n        \"stu_lName\": \"Diana\",\r\n        \"stu_email\": \"Diana@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 125,\r\n        \"stu_fName\": \"Vincent\",\r\n        \"stu_lName\": \"Vincent\",\r\n        \"stu_email\": \"Vincent@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 126,\r\n        \"stu_fName\": \"Kayla\",\r\n        \"stu_lName\": \"Kayla\",\r\n        \"stu_email\": \"Kayla@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 127,\r\n        \"stu_fName\": \"Isabella\",\r\n        \"stu_lName\": \"Isabella\",\r\n        \"stu_email\": \"Isabella@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 128,\r\n        \"stu_fName\": \"Jennifer\",\r\n        \"stu_lName\": \"Jennifer\",\r\n        \"stu_email\": \"Jennifer@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 129,\r\n        \"stu_fName\": \"Susan\",\r\n        \"stu_lName\": \"Susan\",\r\n        \"stu_email\": \"Susan@vanier.ca\"\r\n    },\r\n    {\r\n        \"stu_Id\": 130,\r\n        \"stu_fName\": \"Sarah\",\r\n        \"stu_lName\": \"Sarah\",\r\n        \"stu_email\": \"Sarah@vanier.ca\"\r\n    }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/AddCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"AddCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course/DeleteCourse/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"DeleteCourse",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course/AllCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"AllCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Course by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course/SearchCourseById/53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"SearchCourseById",
+						"53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"c_Id\": 53,\r\n        \"c_Name\": \"Database\",\r\n        \"teacher\": {\r\n            \"t_Id\": 52,\r\n        \"t_fName\": \"Thomas\",\r\n        \"t_lName\": \"Thomas\",\r\n        \"t_email\": \"Thomas@vanier.ca\"\r\n        },\r\n        \"student\": [\r\n            {\r\n                \"stu_Id\": 52,\r\n                \"stu_fName\": \"Ryan\",\r\n                \"stu_lName\": \"xxx\",\r\n                \"stu_email\": \"Ryan@vanier.ca\"\r\n            },\r\n            {\r\n                \"stu_Id\": 53,\r\n                \"stu_fName\": \"Anna\",\r\n                \"stu_lName\": \"yyyy\",\r\n                \"stu_email\": \"Anna@vanier.ca\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/UpdateCourse/53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"UpdateCourse",
+						"53"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
